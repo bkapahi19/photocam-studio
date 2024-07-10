@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Playfair Display",serif; 
+}
+.Main_box{
+    background-image: url(cam7.jpeg);
+    background-size: cover;
+    height:100vh;
+}
+.button1{
+    color:black;
+    font-size:30px;
+    font-weight:700;
+    position: absolute;
+    left:16px;
+    line-height: 60px;
+}
+.button1 i{
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.Sidebar{
+    position: fixed;
+    left:-300px; 
+    height:100vh;
+    width:300px;
+    background-color:rgba(21, 161, 255, 0.372);
+    box-shadow: 0 0 2px rgba(2,0,0,0.5);
+    transition: all 0.3s linear;
+}
+.logo{
+    position: absolute;
+    width:100%;
+    line-height: 16px;
+    box-shadow: 0 2px 4px rgba(2,0,0,0.5);
+    height: 60px;
+}
+.logo a{
+    position: absolute;
+    left:50px;
+    color:black;
+    text-decoration: none;
+    font-size:30px;
+    font-weight:700;
+    margin-top:20px;
+}
+.main_menu{
+    position: absolute;
+    width:100%;
+    top:80px;
+}
+.Button2{
+    color:rgba(0, 0, 0, 0.92);
+    font-size: 25px;
+    line-height:60px;
+    position: absolute;
+    left: 270px;
+    /* opacity: 0; */
+}
+.Button2 i{
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.main_menu li{
+    margin-top: 6px;
+    padding: 14px 20px;
+    transition: all 0.3s linear;
+}
+.main_menu a{
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.main_menu i{
+    padding-right: 8px;
+}
+.social_icons{
+    color:black;
+    position: absolute;
+    left: 25%;
+    bottom:50px;
+}
+.social_icons i{
+    color:rgba(0, 0, 0, 0.679);
+    padding: 0 5px;
+    transition: all 0.3s linear;
+}
+#checkboxs{
+    display: none;
+}
+.main_menu li:hover{
+    box-shadow: 0 0 4px rgba(2,0,0,0.5);
+    background-color:rgb(144, 203, 239);
+}
+.button1 i:hover{
+    font-size:35px;
+}
+.Button2 i:hover{
+    font-size:32px;
+}
+.social_icons i:hover{
+    opacity:2;
+    transform: scale(1.5);
+    color: black;
+}
+#checkboxs:checked~.Sidebar{
+    left:0;
+}
+#checkboxs:checked~.button1{
+    opacity: 0;
+}
+#checkboxs:checked~.Sidebar.Button2 i{
+    opacity: 1;
+}
